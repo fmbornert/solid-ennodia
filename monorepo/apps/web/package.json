@@ -1,27 +1,23 @@
 {
-  "name": "web",
-  "version": "0.1.0",
+  "name": "example-basic",
   "type": "module",
-  "private": true,
   "scripts": {
-    "dev": "next dev --turbopack --port 3000",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint --max-warnings 0",
-    "check-types": "tsc --noEmit"
+    "dev": "vinxi dev",
+    "build": "vinxi build",
+    "start": "vinxi start",
+    "version": "vinxi version"
   },
   "dependencies": {
-    "@repo/ui": "workspace:*",
-    "next": "^15.1.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "@solidjs/meta": "^0.29.4",
+    "@solidjs/router": "^0.15.0",
+    "@solidjs/start": "^1.0.11",
+    "solid-js": "^1.9.2",
+    "vinxi": "^0.4.3"
   },
-  "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
-    "@types/node": "^20",
-    "@types/react": "18.3.1",
-    "@types/react-dom": "18.3.0",
-    "typescript": "5.5.4"
+  "overrides": {
+    "vite": "5.4.10"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
